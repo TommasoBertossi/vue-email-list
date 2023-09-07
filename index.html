@@ -17,10 +17,11 @@
     <script src="./js/main.js" type="text/javascript" defer></script>
 </head>
 <body>
-    <div id="app">
-        <ul class="list-group">
+    <div class="wrapper" id="app">
+        <ul class="list-group" v-show="emails.length >= numberEmails">
+            <li v-for="email in emails">{{ email }}</li>
+            
+        </ul>
     </div>
-        
-    </ul>
 </body>
 </html>
